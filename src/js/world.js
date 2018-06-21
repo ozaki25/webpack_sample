@@ -1,3 +1,3 @@
 import $ from "./lib/jquery";
 
-console.log("hello");
+console.log("world");
