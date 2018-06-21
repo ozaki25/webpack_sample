@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "parcel build ./src/js/hello.js ./src/js/world.js ./src/css/hello.scss ./src/css/world.scss --out-dir ./public"
+    "build": "parcel build ./src/js/*.js ./src/css/*.scss --out-dir ./public"
   },
   "keywords": [],
   "author": "",
