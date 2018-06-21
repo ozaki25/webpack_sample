@@ -4,7 +4,7 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 module.exports = {
   entry: {
     script: "./src/js/index.js",
-    style: "./src/css/index.css"
+    style: "./src/css/index.scss"
   },
   // 現状はjsも出力されてしまう
   // https://github.com/webpack/webpack/issues/7300
@@ -25,8 +25,12 @@ module.exports = {
         }
       },
       {
-        test: /\.css$/,
-        use: [MiniCssExtractPlugin.loader, "css-loader"]
+        test: /\.scss$/,
+        use: [MiniCssExtractPlugin.loader, "css-loader", "sass-loader"]
+      },
+      {
+        test: /\.(png|woff|woff2|eot|ttf|svg)$/,
+        loader: "url-loader"
       }
     ]
   },
