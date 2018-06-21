@@ -6,7 +6,7 @@ module.exports = {
     script: "./src/js/index.js",
     style: "./src/css/index.scss"
   },
-  // 現状はjsも出力されてしまう
+  // 現状はcssのjsも出力されてしまうけど使わなければいいだけ
   // https://github.com/webpack/webpack/issues/7300
   output: {
     path: path.resolve(__dirname, "public"),
