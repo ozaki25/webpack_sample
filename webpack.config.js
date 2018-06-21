@@ -7,7 +7,8 @@ module.exports = {
     style: "./src/css/index.scss"
   },
   // 現状はcssのjsも出力されてしまうけど使わなければいいだけ
-  // https://github.com/webpack/webpack/issues/7300
+  // https://github.com/Va1/browser-sync-webpack-plugin/issues/69
+  // https://github.com/webpack-contrib/mini-css-extract-plugin/issues/151
   output: {
     path: path.resolve(__dirname, "public"),
     filename: "[name].js"
