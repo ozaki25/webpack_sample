@@ -1,5 +1,9 @@
-import "./lib/jquery";
-import "bootstrap-sass";
-import hello from "./hello";
+import './lib/jquery';
+import 'bootstrap-sass';
+import hello from './hello';
 
-console.log(hello());
+async function main() {
+  console.log(await hello());
+}
+
+main();
