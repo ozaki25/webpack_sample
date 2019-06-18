@@ -1,7 +1,6 @@
-const sleep = (func, delay) =>
-  new Promise(resolve => setTimeout(() => resolve(func), delay));
+const sleep = (func, delay) => new Promise(resolve => setTimeout(() => resolve(func), delay));
 
-const hello = async () => {
+const Hello = async () => {
   const hello = { hello: 'hello' };
   const world = { world: 'world' };
   const helloWorld = { ...hello, ...world };
@@ -9,4 +8,4 @@ const hello = async () => {
   return result;
 };
 
-export default hello;
+export default Hello;
