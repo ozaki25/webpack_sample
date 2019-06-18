@@ -2,16 +2,13 @@ module.exports = {
   env: {
     browser: true,
     jquery: true,
-    es6: true
+    es6: true,
   },
   parserOptions: {
-    sourceType: 'module'
+    sourceType: 'module',
   },
-  extends: 'eslint:recommended',
+  extends: 'airbnb-base',
   parser: 'babel-eslint',
-  rules: {
-    quotes: ['error', 'single'],
-    'no-console': ['off']
-  },
-  globals: {}
+  rules: {},
+  globals: {},
 };
