@@ -1,6 +1,18 @@
-$icon-font-path: "~bootstrap-sass/assets/fonts/bootstrap/";
-@import "~bootstrap-sass/assets/stylesheets/_bootstrap.scss";
+$icon-font-path: '~bootstrap-sass/assets/fonts/bootstrap/';
+@import '~bootstrap-sass/assets/stylesheets/_bootstrap.scss';
 
 .hello {
   background-color: #eee;
+}
+
+.btn-custom {
+  @extend .btn;
+  @extend .btn-default;
+  border-color: lightgray;
+  background-color: mintcream;
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: cadetblue;
+  }
 }
